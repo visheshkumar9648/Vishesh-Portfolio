@@ -1,0 +1,396 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishesh - Portfolio</title>
+    <meta name="description" content="Vishesh Kumar - Full Stack Developer Portfolio showcasing web development, .NET development, design, and app development projects.">
+    <meta property="og:title" content="Vishesh Kumar - Full Stack Developer">
+    <meta property="og:description" content="Explore my portfolio featuring web development, .NET development, design, and app development projects.">
+    <meta property="og:image" content="photos\header.png">
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/x-icon" href="photos//header.ico">
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body id="section1">
+    <header>
+        <nav>
+            <div class="left"><span style="color: aqua; font-family: 'Brush Script MT', cursive;">V</span>ishesh.</div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle"/>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="right">
+                <ul>
+                        <!-- Other Header Content -->
+                        <button id="install-btn" style="display:none;">Install App</button>
+                      
+                    <li><a href="#section1">Home</a></li>
+                    <li><a href="#section2">About</a></li>
+                    <li><a href="#section3">Education</a></li>
+                    <li><a href="#section4">Services</a></li>
+                    <li><a href="#section5">Portfolio</a></li>
+                    <li><a href="#section6">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="toggle-switch">
+                <input type="checkbox" id="dark-mode-toggle" class="toggle-input"/>
+                <label for="dark-mode-toggle" class="toggle-label">
+                    <span class="toggle-ball"></span>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="firstSec">
+            <div class="leftSec" data-aos="slide-right">
+                <span style="color: aqua;">Hi...,</span><br/> My Name is <span style="color: #ffbf35;">Vishesh
+                    Kumar</span><br/>
+                and I am <span id="element" style="color: #ffbf35;"></span>
+                <br/>
+                <button class="button" id="downloadBtn">Download Resume</button>
+                <button class="button" id="githubBtn">Visit Github</button>
+            </div>
+            <div class="rightSec" data-aos="fade-up">
+                <img src="photos\\header_img1.png" alt="Developer"/>
+            </div>
+        </section>
+        <hr id="section2"/>
+
+        <!------ABOUT US SECTION------>
+        <section class="section-second" data-aos="fade-up">
+            <div class="container">
+                <div class="about-image" data-aos="fade-down-right">
+                    <img src="photos\\img2.png" alt="Vishesh Kumar"/>
+                </div>
+                <div class="about-content">
+                    <h1>About Me</h1>
+                    <p>Hello! I'm Vishesh, a Full Stack Developer with a passion for creating innovative web
+                        applications.</p>
+                    <p>With several years of experience in software development, I have honed my skills in HTML, CSS,
+                        JavaScript, Java, .Net, and more. My journey in this field has been driven by a deep desire to
+                        create and innovate.</p>
+                    <p>I believe in the power of technology to transform lives, and my work reflects this philosophy. I
+                        strive to bring efficiency, reliability, and scalability to every project I undertake, ensuring
+                        that each one is unique and impactful.</p>
+                    <p>When I'm not working, you can find me exploring new technologies or engaging in hobbies like
+                        reading and gaming. Let's connect and create something amazing together!</p>
+                    <a href="#section6"><button class="btn"> Contact Me</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <hr id="section3"/>
+
+        <!-- Education Section -->
+        <section class="education" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-content">
+                            <h3>Master of Computer Application</h3>
+                            <p>Chandigarh University, Mohali, Punjab</p>
+                            <p>2022 - 2024</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item timeline-item-bottom" data-aos="fade-down">
+                        <div class="timeline-content">
+                            <h3>Bachelor of Science</h3>
+                            <p>Chhatrapati Shahu Ji Maharaj University, Kanpur</p>
+                            <p>2019 - 2022</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-content">
+                            <h3>Intermediate</h3>
+                            <p>Nehru Vidyalaya Inter College, Araul, Kanpur</p>
+                            <p>2017 - 2018</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item timeline-item-bottom" data-aos="fade-down">
+                        <div class="timeline-content">
+                            <h3>High School</h3>
+                            <p>Nehru Vidyalaya Inter College, Araul, Kanpur</p>
+                            <p>2015 - 2016</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr id="section4"/>
+
+        <!------SERVICE SECTION------>
+        <div class="main-section" data-aos="fade-up">
+            <div class="container">
+                <h2 class="heading-text">My Services</h2>
+                <div class="service-grid">
+                    <div class="service-list" data-aos="slide-right">
+                        <div class="icon-text">
+                            <i class="fab fa-chrome"></i>
+                            <h3>Web Development</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing portfolio student website</p>
+                    </div>
+                    <div class="service-list" data-aos="flip-left">
+                        <div class="icon-text">
+                            <i class="fab fa-instagram"></i>
+                            <h3>Web Design</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, student graphic design portfolio websites euismod</p>
+                    </div>
+                    <div class="service-list" data-aos="slide-right">
+                        <div class="icon-text">
+                            <i class="fab fa-reddit"></i>
+                            <h3>Creative Design</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, student portfolio website examples nonummy nibh euismod</p>
+                    </div>
+                    <div class="service-list" data-aos="flip-left">
+                        <div class="icon-text">
+                            <i class="fas fa-video"></i>
+                            <h3>Video Editing</h3>
+                        </div>
+                        <p>student portfolio website, consectetuer adipiscing elitsed nonummy nibh euismod</p>
+                    </div>
+                    <div class="service-list" data-aos="slide-right">
+                        <div class="icon-text">
+                            <i class="fas fa-camera"></i>
+                            <h3>Photography</h3>
+                        </div>
+                        <p>portfolio website examples for students adipiscing elitsed nonummy nibh euismod</p>
+                    </div>
+                    <div class="service-list" data-aos="flip-left">
+                        <div class="icon-text">
+                            <i class="fab fa-apple"></i>
+                            <h3>App Development</h3>
+                        </div>
+                        <p>digital portfolio websites for students adipiscing elitsed nonummy nibh euismod</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
+        <!------SKILL SECTION------>
+        <div class="main-section" data-aos="fade-up">
+            <div class="container">
+                <h2 class="heading-text">My Skills</h2>
+                <div class="width-50" data-aos="slide-right">
+                    <div class="skill">
+                        <b>HTML</b>
+                        <span>95%</span>
+                        <div class="progress-bar">
+                            <span class="progress" style="width: 95%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <b>CSS</b>
+                        <span>91%</span>
+                        <div class="progress-bar">
+                            <span class="progress" style="width: 91%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <b>JavaScript</b>
+                        <span>85%</span>
+                        <div class="progress-bar">
+                            <span class="progress" style="width: 85%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <b>Bootstrap</b>
+                        <span>82%</span>
+                        <div class="progress-bar">
+                            <span class="progress" style="width: 85%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <b>React js</b>
+                        <span>79%</span>
+                        <div class="progress-bar">
+                            <span class="progress" style="width: 79%;"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="width-50" data-aos="flip-left">
+                    <div class="skill">
+                        <b>Java</b>
+                        <span>90%</span>
+                        <div class="progress-bar">
+                            <span class="progress" style="width: 90%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <b>C++</b>
+                        <span>80%</span>
+                        <div class="progress-bar">
+                            <span class="progress" style="width: 80%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <b>C#</b>
+                        <span>85%</span>
+                        <div class="progress-bar">
+                            <span class="progress" style="width: 85%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <b>Python</b>
+                        <span>80%</span>
+                        <div class="progress-bar">
+                            <span class="progress" style="width: 88%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <b>MySQL</b>
+                        <span>88%</span>
+                        <div class="progress-bar">
+                            <span class="progress" style="width: 88%;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr id="section5"/>
+
+        <!-- Project Section -->
+        <section class="portfolio" id="portfolio" data-aos="fade-up">
+            <h2 class="heading">My Project</h2>
+            <div class="portfolio-container">
+                <div class="portfolio-box" data-aos="slide-right">
+                    <img src="photos\\3426526.jpg" alt="Personal Website & Portfolio"/>
+                    <div class="portfolio-layer">
+                        <h4><a href="https://testingforanalytics.in/" target="_blank">Personal Website & Portfolio <i
+                                    class="fas fa-external-link-alt"></i></a></h4>
+                        <p>Developed a responsive portfolio website using HTML, CSS, and JavaScript to showcase projects
+                            and skills. Implemented dynamic animations and interactive elements to enhance user
+                            experience. Optimized website for various devices to ensure seamless accessibility.</p>
+                        <p>Date: 12/2022 - 02/2023</p>
+                    </div>
+                </div>
+                <div class="portfolio-box" data-aos="fade-up">
+                    <img src="photos\\19432.jpg" alt="Hotel Management System"/>
+                    <div class="portfolio-layer">
+                        <h4><a href="https://github.com/visheshkumar9648" target="_blank">Hotel Management System <i
+                                    class="fas fa-external-link-alt"></i></a></h4>
+                        <p>Designed and developed a Hotel Management System web application using HTML, CSS, MySQL
+                            database, and Spring Boot framework. Implemented user-friendly interfaces for managing hotel
+                            reservations, customer profiles, and staff operations. Utilized Spring Boot for backend
+                            development, ensuring efficient data management and system reliability.</p>
+                        <p>Date: 08/2023 - 11/2023</p>
+                    </div>
+                </div>
+                <div class="portfolio-box" data-aos="flip-left">
+                    <img src="photos\\tormarch26.jpg" alt="E-commerce website"/>
+                    <div class="portfolio-layer">
+                        <h4><a href="https://github.com/visheshkumar9648/VistaStyle_E-commerce-website"
+                                target="_blank">E-commerce website <i class="fas fa-external-link-alt"></i></a></h4>
+                        <p>Built an E-commerce website using HTML, CSS, JavaScript, Bootstrap, MySQL database, and
+                            Spring Boot. Developed user-friendly interfaces for browsing products, managing cart, and
+                            processing payments. Implemented backend functionalities using Spring Boot for seamless data
+                            management and system reliability.</p>
+                        <p>Date: 01/2024 - 04/2024</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr id="section6"/>
+
+        <!-- Contact Us Section -->
+
+<!-- Contact Us Section -->
+
+<section class="contact" data-aos="fade-up">
+    <h2 class="heading">Contact <span>Us</span></h2>
+    <form id="contactForm" runat="server" data-aos="zoom-in">
+        <div class="input-box">
+            <asp:TextBox ID="txtName" runat="server" CssClass="form-control" required="required"></asp:TextBox>
+            <label for="txtName">Full Name</label>
+        </div>
+        <div class="input-box">
+            <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" TextMode="Email" required="required"></asp:TextBox>
+            <label for="txtEmail">Email</label>
+        </div>
+        <div class="input-box">
+            <asp:TextBox ID="txtSubject" runat="server" CssClass="form-control" required="required"></asp:TextBox>
+            <label for="txtSubject">Subject</label>
+        </div>
+        <div class="input-box">
+            <asp:TextBox ID="txtMessage" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="5" required="required"></asp:TextBox>
+            <label for="txtMessage">Your Message</label>
+        </div>
+        <asp:Button ID="btnSubmit" runat="server" Text="Send Message" CssClass="btn" OnClick="SubmitForm" />
+    </form>
+
+
+            <div class="contact-info">
+                <div class="info-box" data-aos="slide-right">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Kanpur (Nagar), Uttar Pradesh, India</p>
+                </div>
+                <div class="info-box" data-aos="fade-up">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+91 9648703339</p>
+                </div>
+                <div class="info-box" data-aos="flip-left">
+                    <i class="fas fa-envelope"></i>
+                    <p>katiyarmonu9648@gmail.com</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer-section">
+                    <div class="icon">
+                        <a href="https://www.facebook.com/vishesh.katiyar.12/" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://x.com/" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/feed/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/katiyar_monu01/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UC-gNfdhRW6xUuCs-FdulczA" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div class="text">
+                        <p>Copyright © 2024 All Rights Reserved Vishesh.in</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', 'Android Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script src="Index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
